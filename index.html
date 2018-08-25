@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic-Tac-Toe</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Tic-Tac-Toe</h1>
+	<h2 id="player-turn"></h2>
+	<h2>P1: <span id="player1-points"></span> / DRAW: <span id="draw-points"></span> / P2: <span id="player2-points"></span></h2>
+	<table>
+		<tr>
+			<td class="cell top left goingDown" id="corner1"></td>
+			<td class="cell top half" id="edge1"></td>
+			<td class="cell top right goingUp" id="corner2"></td>
+		</tr>
+		<tr>
+			<td class="cell mid left" id="edge2"></td>
+			<td class="cell mid half goingDown goingUp" id="center0"></td>
+			<td class="cell mid right" id="edge3"></td>
+		</tr>
+		<tr>
+			<td class="cell bot left goingUp" id="corner3"></td>
+			<td class="cell bot half" id="edge4"></td>
+			<td class="cell bot right goingDown" id="corner4"></td>
+		</tr>
+	</table>
+	<h3 id="comments"></h3>
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="AIplayer.js"></script>
+</body>
+</html>
